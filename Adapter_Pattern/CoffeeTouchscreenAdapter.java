@@ -5,10 +5,11 @@ public class CoffeeTouchscreenAdapter implements CoffeeMachineInterface {
     public OldCoffeeMachine theMachine;
 
     public static void main(String[] arg) {
-        OldCoffeeMachine theMachine = new OldCoffeeMachine();
-        CoffeeTouchscreenAdapter newCofeeM = new CoffeeTouchscreenAdapter(theMachine);
-        newCofeeM.chooseFirstSelection();
-        newCofeeM.chooseSecondSelection();
+
+        OldCoffeeMachine oldCoffeeMachine = new OldCoffeeMachine();
+        CoffeeTouchscreenAdapter newCoffeeMachine = new CoffeeTouchscreenAdapter(oldCoffeeMachine);
+        newCoffeeMachine.chooseFirstSelection();
+        newCoffeeMachine.chooseSecondSelection();
     }
 
     public CoffeeTouchscreenAdapter(OldCoffeeMachine newMachine) {
