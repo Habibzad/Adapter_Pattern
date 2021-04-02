@@ -2,10 +2,10 @@ package adapterPattern;
 
 public class OldCoffeeMachine {
     public void selectA() {
-        System.out.println("Selected Espresso");
+        System.out.println("Making coffee A");
     }
 
     public void selectB() {
-        System.out.println("Selected Lotte");
+        System.out.println("Making coffee B");
     }
 }
