@@ -2,19 +2,19 @@ package adapterPattern;
 
 public class CoffeeTouchscreenAdapter implements CoffeeMachineInterface {
 
-    OldCoffeeMachine oldCoffeeMachine;
+    private final OldCoffeeMachine oldCoffeeMachine;
 
-    CoffeeTouchscreenAdapter(OldCoffeeMachine machine) {
+    public CoffeeTouchscreenAdapter(OldCoffeeMachine machine) {
         oldCoffeeMachine = machine;
     }
 
     @Override
     public void chooseFirstSelection() {
-        oldCoffeeMachine.SelectA();
+        oldCoffeeMachine.makeEspresso();
     }
 
     @Override
     public void chooseSecondSelection() {
-        oldCoffeeMachine.SelectB();
+        oldCoffeeMachine.makeLatte();
     }
 }
